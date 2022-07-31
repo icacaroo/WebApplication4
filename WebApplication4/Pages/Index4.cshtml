@@ -1,0 +1,66 @@
+﻿@page
+@model WebApplication4.Pages.Shared.Index4Model
+@{
+}
+
+
+
+<style>
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 200px;
+        background-color: yellow;
+        border: 3px solid #555;
+    }
+
+    li a {
+        display: block;
+        color: red;
+        padding: 8px 16px;
+        text-decoration: none;
+    }
+
+    li {
+        text-align: center;
+        border-bottom: 1px solid blue;
+    }
+
+        li:last-child {
+            border-bottom: double;
+        }
+
+        li a.active {
+            background-color: yellow;
+            color: white;
+        }
+
+        li a:hover:not(.active) {
+            background-color: deepskyblue;
+            color: green;
+        }
+</style>
+
+
+
+
+
+
+
+
+<body style="background-color: coral">
+    <ul>
+        <li><a href="~/imagens/IMAGEM_05.jpg">Imagem 1</a></li>
+        <li><a href="~/imagens/IMAGEM_07.jpg">Imagem 2</a></li>
+        <li><a href="~/imagens/IMAGEM_09.jpg">Imagem 3</a></li>
+
+        <li><a asp-area="" asp-page="/index2">Página 2</a> </li>
+        <li><a asp-area="" asp-page="/index3">Página 3</a> </li>
+        <li><a asp-area="" asp-page="/index4">Página 4</a> </li>
+        <li><a asp-area="" asp-page="/index5">Página 5</a> </li>
+    </ul>
+
+
+
+</body>
